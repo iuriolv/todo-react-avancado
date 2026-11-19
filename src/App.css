@@ -1,0 +1,224 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #c8ff00;
+}
+
+.header p {
+    color: #999999;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Container principal */
+.todo-container {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.section-header h1 {
+    font-size: 1.5rem;
+}
+
+.status {
+    color: #c8ff00;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Formulário */
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.todo-form input {
+    width: 100%;
+    padding: 14px;
+    background-color: #101010;
+    border: 1px solid #444444;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.todo-form input::placeholder {
+    color: #777777;
+}
+
+.todo-form button {
+    padding: 14px;
+    background-color: #c8ff00;
+    color: #101010;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.todo-form button:hover {
+    background-color: #a8d900;
+}
+
+/* Filtros */
+.todo-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.todo-filters button {
+    padding: 8px 12px;
+    background-color: #292929;
+    color: #cccccc;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+
+.todo-filters button.ativo {
+    background-color: #c8ff00;
+    color: #101010;
+    border-color: #c8ff00;
+    font-weight: bold;
+}
+
+.todo-filters p {
+    width: 100%;
+    color: #888888;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+/* Lista de tarefas */
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background-color: #242424;
+    border: 1px solid #383838;
+    border-radius: 6px;
+}
+
+.todo-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.todo-item input {
+    accent-color: #c8ff00;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.todo-item span {
+    overflow-wrap: anywhere;
+}
+
+.todo-item.concluida span {
+    color: #777777;
+    text-decoration: line-through;
+}
+
+.btn-remover {
+    background: none;
+    border: none;
+    color: #ff6565;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.btn-remover:hover {
+    color: #ff9999;
+}
+
+.lista-vazia {
+    text-align: center;
+    color: #888888;
+    padding: 25px 10px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    color: #666666;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+    .container {
+        padding: 60px 20px;
+    }
+
+    .todo-container {
+        padding: 30px;
+    }
+
+    .section-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .todo-form {
+        flex-direction: row;
+    }
+
+    .todo-form input {
+        flex: 1;
+    }
+
+    .todo-form button {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .todo-filters p {
+        width: auto;
+        margin-left: auto;
+    }
+}

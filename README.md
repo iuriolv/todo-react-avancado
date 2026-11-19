@@ -1,16 +1,109 @@
-# React + Vite
+# ✅ TaskFlow — Lista de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação web desenvolvida com React para gerenciamento de tarefas diárias. O projeto permite adicionar, concluir, remover e filtrar tarefas, utilizando recursos do React para gerenciamento e compartilhamento de estados.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Adicionar tarefas:** cadastre novas tarefas por meio de um formulário.
+- **Concluir tarefas:** marque tarefas como concluídas ou reabra-as.
+- **Remover tarefas:** exclua tarefas da lista.
+- **Filtrar tarefas:** visualize todas, apenas pendentes ou concluídas.
+- **Persistência de dados:** as tarefas permanecem salvas no navegador utilizando LocalStorage.
+- **Contador de tarefas:** acompanhe a quantidade de tarefas pendentes e cadastradas.
+- **Layout responsivo:** interface adaptada para dispositivos móveis e desktops.
 
-## React Compiler
+## 🛠️ Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- HTML5
+- CSS3
+- Context API
+- React Hooks:
+  - `useState`
+  - `useContext`
+  - `useEffect`
+  - `useMemo`
+  - `useCallback`
+  - `useContext`
+  - `React.memo`
+- LocalStorage
 
-## Expanding the Oxlint configuration
+## 📂 Estrutura do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+lista-tarefas/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── TodoForm.jsx
+│   │   ├── TodoFilters.jsx
+│   │   ├── TodoList.jsx
+│   │   └── TodoItem.jsx
+│   │
+│   ├── context/
+│   │   └── TodoContext.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useLocalStorage.js
+│   │   └── useTodos.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
+## 💻 Como executar o projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/iuriolv/todo-react-avancado.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd lista-tarefas
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Execute a aplicação
+
+```bash
+npm run dev
+```
+
+Acesse o endereço disponibilizado pelo Vite no terminal, geralmente:
+
+```text
+http://localhost:5173
+```
+
+## 📚 Objetivo do projeto
+
+Este projeto foi desenvolvido como atividade prática de estudos em React, com o objetivo de aplicar conceitos de componentização, gerenciamento de estados, Context API, criação de hooks customizados, persistência de dados e otimização de renderização.
+
+## 👨‍💻 Desenvolvedor
+
+**Iuri Oliveira**
+
+- GitHub: [@iuriolv](https://github.com/iuriolv)
+- LinkedIn: [Meu perfil](https://www.linkedin.com/in/iuri-oliveira-python/)
+
+---
+
+Desenvolvido com React 🚀

@@ -26,7 +26,6 @@ Aplicação web desenvolvida com React para gerenciamento de tarefas diárias. O
   - `useEffect`
   - `useMemo`
   - `useCallback`
-  - `useContext`
   - `React.memo`
 - LocalStorage
 
@@ -72,7 +71,7 @@ git clone https://github.com/iuriolv/todo-react-avancado.git
 ### 2. Entre na pasta do projeto
 
 ```bash
-cd lista-tarefas
+cd todo-react-avancado
 ```
 
 ### 3. Instale as dependências
